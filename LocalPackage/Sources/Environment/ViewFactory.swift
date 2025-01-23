@@ -20,6 +20,6 @@ public struct DefaultDependencies: Dependencies {
     }
 
     public func makeFugaView() -> AnyView {
-        AnyView(Text("FugaView not implemented"))
+        AnyView(Text("⛔️⛔️ FugaView not implemented ⛔️⛔️"))
     }
 }
