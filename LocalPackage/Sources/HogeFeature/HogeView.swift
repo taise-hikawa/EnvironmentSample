@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct HogeView: View {
-
-    var body: some View {
+public struct HogeView: View {
+    public init() {}
+    public var body: some View {
         NavigationStack {
             VStack(spacing: 50) {
                 Text("This is HogeView")
                 NavigationLink {
-                    FugaView()
+//                    FugaView()
+                    Text("FugaView") // TODO:
                 } label: {
                     Text("Navigate to FugaView")
                 }

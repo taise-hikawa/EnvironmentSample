@@ -13,7 +13,8 @@ struct FugaView: View {
             VStack(spacing: 50) {
                 Text("This is FugaView")
                 NavigationLink {
-                    HogeView()
+//                    HogeView()
+                    Text("HogeView") // TODO:
                 } label: {
                     Text("Navigate to HogeView")
                 }
