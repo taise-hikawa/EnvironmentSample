@@ -7,12 +7,27 @@
 
 import SwiftUI
 import HogeFeature
+import FugaFeature
+import Environment
 
 @main
 struct EnvironmentSampleApp: App {
     var body: some Scene {
         WindowGroup {
             HogeView()
+                .environment(\.dependencies, DependenciesImpl())
         }
     }
+}
+
+private extension EnvironmentSampleApp {
+    struct DependenciesImpl: Dependencies {
+        func makeHogeView() -> AnyView {
+            AnyView(HogeView())
+        }
+        func makeFugaView() -> AnyView {
+            AnyView(FugaView())
+        }
+    }
+
 }

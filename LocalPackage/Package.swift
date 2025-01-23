@@ -10,9 +10,12 @@ let package = Package(
     ],
     products: [
         .library(name: "HogeFeature", targets: ["HogeFeature"]),
+        .library(name: "FugaFeature", targets: ["FugaFeature"]),
+        .library(name: "Environment", targets: ["Environment"]),
     ],
     targets: [
-        .target(name: "HogeFeature", dependencies: []),
-        .target(name: "FugaFeature", dependencies: [])
+        .target(name: "HogeFeature", dependencies: ["Environment"]),
+        .target(name: "FugaFeature", dependencies: ["Environment"]),
+        .target(name: "Environment", dependencies: []),
     ]
 )
