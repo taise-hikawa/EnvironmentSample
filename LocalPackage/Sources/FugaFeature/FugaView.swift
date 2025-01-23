@@ -6,15 +6,17 @@
 //
 
 import SwiftUI
+import Environment
 
-struct FugaView: View {
-    var body: some View {
+public struct FugaView: View {
+    @Environment(\.dependencies) private var dependencies
+    public init() {}
+    public var body: some View {
         NavigationStack {
             VStack(spacing: 50) {
                 Text("This is FugaView")
                 NavigationLink {
-//                    HogeView()
-                    Text("HogeView") // TODO:
+                    dependencies.makeHogeView()
                 } label: {
                     Text("Navigate to HogeView")
                 }

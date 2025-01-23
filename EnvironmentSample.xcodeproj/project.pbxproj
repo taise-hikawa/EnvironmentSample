@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D596C3DE2D426AA200C80A24 /* HogeFeature in Frameworks */ = {isa = PBXBuildFile; productRef = D596C3DD2D426AA200C80A24 /* HogeFeature */; };
+		D596C3E02D42936D00C80A24 /* Environment in Frameworks */ = {isa = PBXBuildFile; productRef = D596C3DF2D42936D00C80A24 /* Environment */; };
+		D596C3E22D42936D00C80A24 /* FugaFeature in Frameworks */ = {isa = PBXBuildFile; productRef = D596C3E12D42936D00C80A24 /* FugaFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D596C3E22D42936D00C80A24 /* FugaFeature in Frameworks */,
+				D596C3E02D42936D00C80A24 /* Environment in Frameworks */,
 				D596C3DE2D426AA200C80A24 /* HogeFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +85,8 @@
 			name = EnvironmentSample;
 			packageProductDependencies = (
 				D596C3DD2D426AA200C80A24 /* HogeFeature */,
+				D596C3DF2D42936D00C80A24 /* Environment */,
+				D596C3E12D42936D00C80A24 /* FugaFeature */,
 			);
 			productName = EnvironmentSample;
 			productReference = D596C3BC2D4267D700C80A24 /* EnvironmentSample.app */;
@@ -345,6 +351,14 @@
 		D596C3DD2D426AA200C80A24 /* HogeFeature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = HogeFeature;
+		};
+		D596C3DF2D42936D00C80A24 /* Environment */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Environment;
+		};
+		D596C3E12D42936D00C80A24 /* FugaFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FugaFeature;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
